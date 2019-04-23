@@ -32,5 +32,7 @@ public class TempController {
         JSONObject mempoolInfo = bitcoinApi.getMempoolInfo();
         JSONObject mempoolContents = bitcoinApi.getMempoolContents();
         String blockHashByHeight = bitcoinJsonRpcClient.getBlockHashByHeight(1489445);
+        String address = "mwt9LmdatUcksGQ8eEbKbbPnczUmTq4G9h";
+        Double balanceAmount = bitcoinJsonRpcClient.getBalance(address);
     }
 }

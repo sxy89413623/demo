@@ -18,6 +18,7 @@ public class BlockController {
         return null;
     }
 
+
     @GetMapping("/getRecentBlocksByNameType")
     public List<BlockListDTO> getRecentBlocksByNameType(@RequestParam String name,
                                                         @RequestParam String type){
